@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xGZ-A0-13f">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FaceMedAppDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1QJ-dP-m4w">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fg-4A-9fd">
+                                <rect key="frame" x="164.5" y="298.5" width="46" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="1Wf-MB-eHj"/>
+                                    <constraint firstAttribute="height" constant="70" id="gwX-HC-vbF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pickAPhotoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRL-ko-MF2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1QJ-dP-m4w" firstAttribute="trailing" secondItem="Yog-KA-sqM" secondAttribute="trailing" id="55x-nb-770"/>
+                            <constraint firstItem="0Fg-4A-9fd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="67s-hW-S99"/>
+                            <constraint firstItem="0Fg-4A-9fd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8vy-7J-QpU"/>
+                            <constraint firstItem="1QJ-dP-m4w" firstAttribute="top" secondItem="Yog-KA-sqM" secondAttribute="top" id="DDk-B0-vg1"/>
+                            <constraint firstItem="1QJ-dP-m4w" firstAttribute="leading" secondItem="Yog-KA-sqM" secondAttribute="leading" id="Kj5-JD-EgV"/>
+                            <constraint firstItem="1QJ-dP-m4w" firstAttribute="bottom" secondItem="Yog-KA-sqM" secondAttribute="bottom" id="R0Q-6p-cX3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yog-KA-sqM"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="1QJ-dP-m4w" id="jJ9-TN-IHj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Start Screan Controller-->
+        <scene sceneID="piO-2y-gBb">
+            <objects>
+                <viewController id="xGZ-A0-13f" customClass="StartScreanController" customModule="FaceMedAppDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="osp-61-oDw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twL-4o-x5A">
+                                <rect key="frame" x="144" y="100" width="87" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="exc-nQ-5nD"/>
+                                    <constraint firstAttribute="height" constant="38" id="pfR-B3-Glh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ML" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZk-Xd-7az">
+                                <rect key="frame" x="156" y="148" width="63" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="01g-kq-g9n"/>
+                                    <constraint firstAttribute="height" constant="41" id="UJ6-my-I2A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W24-GV-sZj">
+                                <rect key="frame" x="94" y="517" width="187" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="X9e-yG-nMe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="27"/>
+                                <state key="normal" title="Face Scan">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="scaningFace:" destination="xGZ-A0-13f" eventType="touchUpInside" id="twC-CM-N2q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OX-hB-kdY">
+                                <rect key="frame" x="94" y="437" width="187" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="UZp-uD-J9C"/>
+                                    <constraint firstAttribute="height" constant="50" id="qfT-GS-65y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="27"/>
+                                <state key="normal" title="Pneumonia">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="scaningFace:" destination="xGZ-A0-13f" eventType="touchUpInside" id="umM-iv-E8C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W24-GV-sZj" firstAttribute="top" secondItem="0OX-hB-kdY" secondAttribute="bottom" constant="30" id="DuE-KI-7MM"/>
+                            <constraint firstItem="PZk-Xd-7az" firstAttribute="top" secondItem="twL-4o-x5A" secondAttribute="bottom" constant="10" id="HXK-Dc-bB0"/>
+                            <constraint firstItem="wpO-IH-9RS" firstAttribute="bottom" secondItem="W24-GV-sZj" secondAttribute="bottom" constant="100" id="K2e-eA-ngR"/>
+                            <constraint firstItem="0OX-hB-kdY" firstAttribute="centerX" secondItem="osp-61-oDw" secondAttribute="centerX" id="KPX-Xt-Azq"/>
+                            <constraint firstItem="W24-GV-sZj" firstAttribute="trailing" secondItem="0OX-hB-kdY" secondAttribute="trailing" id="Pjh-6U-eRm"/>
+                            <constraint firstItem="twL-4o-x5A" firstAttribute="centerX" secondItem="osp-61-oDw" secondAttribute="centerX" id="VdO-Ar-B7a"/>
+                            <constraint firstItem="W24-GV-sZj" firstAttribute="centerX" secondItem="osp-61-oDw" secondAttribute="centerX" id="lX2-f2-thd"/>
+                            <constraint firstItem="W24-GV-sZj" firstAttribute="leading" secondItem="0OX-hB-kdY" secondAttribute="leading" id="pr5-Qh-Fzg"/>
+                            <constraint firstItem="PZk-Xd-7az" firstAttribute="centerX" secondItem="osp-61-oDw" secondAttribute="centerX" id="wZv-H3-bDu"/>
+                            <constraint firstItem="twL-4o-x5A" firstAttribute="top" secondItem="wpO-IH-9RS" secondAttribute="top" constant="100" id="xGF-UC-C68"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wpO-IH-9RS"/>
+                    </view>
+                    <connections>
+                        <outlet property="faceScanButton" destination="W24-GV-sZj" id="o9f-b1-dSz"/>
+                        <outlet property="pneumoniaButton" destination="0OX-hB-kdY" id="g1R-Gf-44y"/>
+                        <segue destination="9cE-gi-bRC" kind="show" identifier="showPersonIhfo" id="GeV-HB-V4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ndl-ew-vTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--Person Info Controller-->
+        <scene sceneID="THb-Yb-YwJ">
+            <objects>
+                <tableViewController id="9cE-gi-bRC" customClass="PersonInfoController" customModule="FaceMedAppDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1QV-w5-uQc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MF2-L3-7VK">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MF2-L3-7VK" id="XPj-OQ-DGA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9cE-gi-bRC" id="mBP-W1-XIv"/>
+                            <outlet property="delegate" destination="9cE-gi-bRC" id="IMi-3T-goQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5R2-pf-zAn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkx-Hf-Rch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794" y="132"/>
+        </scene>
+    </scenes>
+</document>
