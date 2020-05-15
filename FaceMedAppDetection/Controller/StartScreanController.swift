@@ -116,8 +116,6 @@ extension StartScreanController: UIImagePickerControllerDelegate, UINavigationCo
                         return
                     }
                     
-                    var faceCount = 0
-                    
                     var allFace: [CGRect] = []
                     res.results?.forEach({ (res) in
                         guard let face = res as? VNFaceObservation else { return }

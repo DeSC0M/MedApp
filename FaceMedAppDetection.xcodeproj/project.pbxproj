@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06253247246D54DA00CFE409 /* UserClassification 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06253246246D54D900CFE409 /* UserClassification 1.mlmodel */; };
-		06253249246DA22500CFE409 /* Pneumonia.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06253248246DA22500CFE409 /* Pneumonia.mlmodel */; };
+		0608E988246EAB6400201248 /* UserClassification 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0608E986246EAB6400201248 /* UserClassification 1.mlmodel */; };
+		0608E989246EAB6400201248 /* Pneumonia.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0608E987246EAB6400201248 /* Pneumonia.mlmodel */; };
 		065FF05E2469A42E007A958B /* StartScreanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FF05D2469A42E007A958B /* StartScreanController.swift */; };
 		0696B2E82462F92F003D14A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696B2E72462F92F003D14A6 /* AppDelegate.swift */; };
 		0696B2EA2462F92F003D14A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696B2E92462F92F003D14A6 /* SceneDelegate.swift */; };
@@ -23,8 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06253246246D54D900CFE409 /* UserClassification 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "UserClassification 1.mlmodel"; path = "mlModel/UserClassification.mlproj/Models/UserClassification 1.mlmodel"; sourceTree = SOURCE_ROOT; };
-		06253248246DA22500CFE409 /* Pneumonia.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Pneumonia.mlmodel; path = mlModel/Pneumonia.mlproj/Models/Pneumonia.mlmodel; sourceTree = SOURCE_ROOT; };
+		0608E986246EAB6400201248 /* UserClassification 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "UserClassification 1.mlmodel"; sourceTree = "<group>"; };
+		0608E987246EAB6400201248 /* Pneumonia.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Pneumonia.mlmodel; sourceTree = "<group>"; };
 		065FF05D2469A42E007A958B /* StartScreanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreanController.swift; sourceTree = "<group>"; };
 		0696B2E42462F92F003D14A6 /* FaceMedAppDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceMedAppDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0696B2E72462F92F003D14A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 		06A3A3E6246C18F5008D786A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				06253246246D54D900CFE409 /* UserClassification 1.mlmodel */,
-				06253248246DA22500CFE409 /* Pneumonia.mlmodel */,
+				0608E987246EAB6400201248 /* Pneumonia.mlmodel */,
+				0608E986246EAB6400201248 /* UserClassification 1.mlmodel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06253247246D54DA00CFE409 /* UserClassification 1.mlmodel in Sources */,
+				0608E988246EAB6400201248 /* UserClassification 1.mlmodel in Sources */,
 				0696B2EC2462F92F003D14A6 /* ViewController.swift in Sources */,
 				06A3A3E9246C1943008D786A /* LabelViewCell.swift in Sources */,
 				065FF05E2469A42E007A958B /* StartScreanController.swift in Sources */,
@@ -200,7 +200,7 @@
 				06A3A3EC246C2199008D786A /* PersonInfoController.swift in Sources */,
 				0696B2F22462F930003D14A6 /* FaceMedAppDetection.xcdatamodeld in Sources */,
 				0696B2EA2462F92F003D14A6 /* SceneDelegate.swift in Sources */,
-				06253249246DA22500CFE409 /* Pneumonia.mlmodel in Sources */,
+				0608E989246EAB6400201248 /* Pneumonia.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
