@@ -12,7 +12,6 @@
 		065FF05E2469A42E007A958B /* StartScreanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065FF05D2469A42E007A958B /* StartScreanController.swift */; };
 		0696B2E82462F92F003D14A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696B2E72462F92F003D14A6 /* AppDelegate.swift */; };
 		0696B2EA2462F92F003D14A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696B2E92462F92F003D14A6 /* SceneDelegate.swift */; };
-		0696B2EC2462F92F003D14A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696B2EB2462F92F003D14A6 /* ViewController.swift */; };
 		0696B2EF2462F92F003D14A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0696B2ED2462F92F003D14A6 /* Main.storyboard */; };
 		0696B2F22462F930003D14A6 /* FaceMedAppDetection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0696B2F02462F930003D14A6 /* FaceMedAppDetection.xcdatamodeld */; };
 		0696B2F42462F931003D14A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0696B2F32462F931003D14A6 /* Assets.xcassets */; };
@@ -29,7 +28,6 @@
 		0696B2E42462F92F003D14A6 /* FaceMedAppDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceMedAppDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0696B2E72462F92F003D14A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0696B2E92462F92F003D14A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0696B2EB2462F92F003D14A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0696B2EE2462F92F003D14A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0696B2F12462F930003D14A6 /* FaceMedAppDetection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FaceMedAppDetection.xcdatamodel; sourceTree = "<group>"; };
 		0696B2F32462F931003D14A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,14 +49,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0608E985246E905800201248 /* trash */ = {
-			isa = PBXGroup;
-			children = (
-				0696B2EB2462F92F003D14A6 /* ViewController.swift */,
-			);
-			path = trash;
-			sourceTree = "<group>";
-		};
 		065FF05C2469A403007A958B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +77,6 @@
 		0696B2E62462F92F003D14A6 /* FaceMedAppDetection */ = {
 			isa = PBXGroup;
 			children = (
-				0608E985246E905800201248 /* trash */,
 				0696B2E72462F92F003D14A6 /* AppDelegate.swift */,
 				0696B2E92462F92F003D14A6 /* SceneDelegate.swift */,
 				06A3A3E6246C18F5008D786A /* Model */,
@@ -193,7 +182,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0608E988246EAB6400201248 /* UserClassification 1.mlmodel in Sources */,
-				0696B2EC2462F92F003D14A6 /* ViewController.swift in Sources */,
 				06A3A3E9246C1943008D786A /* LabelViewCell.swift in Sources */,
 				065FF05E2469A42E007A958B /* StartScreanController.swift in Sources */,
 				0696B2E82462F92F003D14A6 /* AppDelegate.swift in Sources */,
