@@ -101,7 +101,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="scaningFace:" destination="xGZ-A0-13f" eventType="touchUpInside" id="umM-iv-E8C"/>
+                                    <action selector="pneumoniaAction:" destination="xGZ-A0-13f" eventType="touchUpInside" id="EiK-jU-APx"/>
                                 </connections>
                             </button>
                         </subviews>

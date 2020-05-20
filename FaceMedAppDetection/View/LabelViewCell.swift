@@ -58,7 +58,9 @@ class LabelViewCell: UITableViewCell {
         constraintArray.removeAll()
         
         avatar.isHidden = true
-        if type == .Head {
+        
+        switch type {
+        case .Head:
             avatar.isHidden = false
             constraintArray += [
                                 
@@ -74,20 +76,22 @@ class LabelViewCell: UITableViewCell {
                 view.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30),
                 view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
             ]
-        } else if type == .Tail {
-            constraintArray += [
-                mainLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
-                
-                view.topAnchor.constraint(equalTo: contentView.topAnchor),
-                view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -30)
-            ]
-        } else {
+        case .Middle:
             constraintArray += [
                 mainLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             
                 view.topAnchor.constraint(equalTo: contentView.topAnchor),
                 view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
             ]
+        case .Tail:
+            constraintArray += [
+                mainLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+                
+                view.topAnchor.constraint(equalTo: contentView.topAnchor),
+                view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -30)
+            ]
+        case .none:
+            break
         }
         
         constraintArray += [
@@ -113,7 +117,9 @@ class LabelViewCell: UITableViewCell {
         view.backgroundColor = #colorLiteral(red: 0.9463019967, green: 0.8449216485, blue: 0.6859424114, alpha: 1)
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.black.cgColor
-        if type == .Head {
+        
+        switch type {
+        case .Head:
             view.layer.cornerRadius = 5
             view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
             
@@ -128,11 +134,13 @@ class LabelViewCell: UITableViewCell {
             avatar.layer.shadowOffset = .zero
             avatar.layer.shadowRadius = 3
             avatar.layer.shadowOpacity = 0.5
-        } else if type == .Middle {
-           
-        } else {
+        case .Tail:
             view.layer.cornerRadius = 5
             view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        case .Middle:
+            break
+        case .none:
+            break
         }
     }
     
